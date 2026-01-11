@@ -1,0 +1,15 @@
+NeoVim
+- Instalado o NeoVim;
+- Criado e configurado arquivo init.lua, no diretório ~/.config/nvim. Nesse arquivo é possível adicionar vários parâmetros de configuração;
+	- vim.keymap.set('n', '<C-a>', 'ggVG') - configura o Ctrl+a para selecionar todo o texto
+	- vim.opt.spelllang = {'pt'}  - adiciona dicionário e verifica em tempo real os termos
+	- vim.opt.spell = true - ativa dicinário
+
+- Poderia alterar o .bashrc ou .zshrc para ativar o nvim através do vi, mas não quis;
+- Após perceber que estava configurando o vi em vez do nvim, consegui configurar o spelllang para pt. Pra isso adicionei duas propriedades ao ./config/nvim;
+- 
+	Comando úteis:
+	- :%s "texto" = localiza texto
+	- vsp "nome_do_arquivo" já aberto. Ele coloca lado a lado, mas não percebi utilidade
+
+
