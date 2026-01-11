@@ -19,7 +19,12 @@ Comando úteis:
 Dotfiles
 	- Arquivos de configurações comuns do Git, NeoVim, VSCode, bash, etc
 	- Criar repositório no Git e Github
-	- Mover (mv arquivo_original repositórioLocalGit)
-	- 
+	- Mover (mv caminho_do_arquivo_original caminho_do_repositórioLocalGit_dotfiles):
+		mv ~/.config ~/git/dotfile
+			neste exemplo, o arquivo nvim está dentro de .config
+	- Criar link simbólico: ln -s caminho_do_repositórioLocalGit_dotfiles caminho_do_arquivo_original
+		ln -s ~/git/dotfiles/ ~/.config
+			ao executar o 1° comando deixará de existir o ~/.config, mas na criação do link simbólico é criado
+
 
 
